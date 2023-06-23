@@ -57,15 +57,15 @@ def add_watermark():
 
 def show_info():
     messagebox.showinfo(title="About The Program", message="_The 'watermark' input should contain the watermark that "
-                                                           "you want to put on the image\n"
+                                                           "you want to put on the image.\n"
                                                            "_The 'Select file' button selects the image that you want "
-                                                           "to put on it the watermark\n"
-                                                           "_The 'Add watermark' button creates an image identical "
+                                                           "to put on it the watermark.\n"
+                                                           "_The 'Add watermark' button creates an image identical. "
                                                            "to the one selected but with the watermark that you wrote."
                                                            "\n"
                                                            "Note: When you click on the 'add watermark' button you "
                                                            "will specify the directory and the name of the new image "
-                                                           "that is created")
+                                                           "that is created.")
 
 
 # Create the Tkinter window
