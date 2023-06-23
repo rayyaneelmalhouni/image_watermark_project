@@ -55,11 +55,23 @@ def add_watermark():
     image_path = ""
 
 
+def show_info():
+    messagebox.showinfo(title="About The Program", message="_The 'watermark' input should contain the watermark that "
+                                                           "you want to put on the image\n"
+                                                           "_The 'Select file' button selects the image that you want "
+                                                           "to put on it the watermark\n"
+                                                           "_The 'Add watermark' button creates an image identical "
+                                                           "to the one selected but with the watermark that you wrote."
+                                                           "\n"
+                                                           "Note: When you click on the 'add watermark' button you "
+                                                           "will specify the directory and the name of the new image "
+                                                           "that is created")
+
+
 # Create the Tkinter window
 window = tk.Tk()
 window.title("Image Watermark Program")
 window.config(padx=50, pady=50)
-
 
 
 # Add a button to open the image
@@ -74,6 +86,9 @@ select_button.grid(row=1, column=0, columnspan=2)
 
 add_watermark_button = tk.Button(window, text="Add Watermark", command=add_watermark, width=28)
 add_watermark_button.grid(row=2, column=0, columnspan=2)
+
+info_button = tk.Button(window, text="Info", command=show_info, width=28)
+info_button.grid(row=3, column=0, columnspan=2)
 
 
 # Run the Tkinter event loop
